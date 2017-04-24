@@ -1,0 +1,587 @@
+/*
+基本默认值
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    color: #222;
+}
+
+
+/*选中文字的效果*/
+
+::-moz-selection {
+    background-color: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background-color: #b3d4fc;
+    text-shadow: none;
+}
+
+
+/*无序列表样式*/
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.clearfix:before, .clearfix:after {
+    display: table;
+    line-height: 0;
+    content: "";
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+
+/*wrap*/
+
+.wrap {
+    position: relative;
+}
+
+
+/*header*/
+
+header.clearfix {
+    height: 90px;
+    color: #fff;
+    font-weight: bold;
+    margin: -8px -8px 8px -8px;
+}
+
+header nav {
+    width: 90%;
+    margin: 0 auto;
+}
+
+header .logo.clearfix {
+    margin-top: 10px;
+    float: left;
+}
+
+header .logo img {
+    height: 80px;
+    float: left;
+    width: 80px;
+    border-radius: 50%;
+    border: 2px solid #eee;
+    float: left;
+}
+
+header .logo span {
+    float: left;
+    line-height: 30px;
+    font-size: 20px;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+header ul.nav.clearfix {
+    float: right;
+}
+
+header ul a {
+    display: inline-block;
+    color: #fff;
+}
+
+header ul li {
+    padding: 5px;
+    display: inline-block;
+    margin: 28px 10px;
+}
+
+
+/*首页大图片*/
+
+section.shouye {
+    width: 100%;
+    min-height: 500px;
+}
+
+.popup-container {
+    position: relative;
+    top: 30px;
+    width: 100%;
+    height: 312px;
+}
+
+.img-flex {
+    position: absolute;
+}
+
+.img-flex ul {
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+}
+
+.img-flex ul li {
+    display: block;
+    background-repeat: no-repeat;
+    float: left;
+    position: relative;
+}
+
+
+/*座右铭*/
+
+.famouse {
+    position: relative;
+    top: 80px;
+    width: 80%;
+    margin: 0 auto;
+    color: #576c5f;
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+    font-family: cursive;
+    letter-spacing: 2px
+}
+
+.famouse .p1 {
+    animation-duration: 2s;
+}
+
+.famouse .p2 {
+    animation-duration: 2s;
+}
+
+
+/*图标设置*/
+
+@font-face {
+    font-family: "iconfont";
+    src: url('../font/iconfont.eot');
+    src: url('../font/iconfont.eot') format('embedded-opentype'), /* IE6-IE8 */
+    url('../font/iconfont.woff') format('woff'), /* chrome, firefox */
+    url('../font/iconfont.ttf') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+    url('../font/iconfont.svg') format('svg');
+    /* iOS 4.1- */
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 22px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #9c9c9c;
+    margin: 0 5px;
+}
+
+
+/*个人资料左边导航*/
+
+section.myself, section.myself a {
+    font-size: 20px;
+    color: #333;
+}
+
+section.myself {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    min-height: 500px;
+}
+
+section.myself a {
+    position: relative;
+    padding: 10px;
+    display: none;
+    width: 220px;
+    display: none;
+    transition: all .5s;
+}
+
+section.myself a::before, section.myself a::after {
+    position: absolute;
+    content: "";
+    display: block;
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: -webkit-transform 0.3s;
+    transition: all 0.3s;
+    transition: all 0.3s, -webkit-transform 0.3s;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+}
+
+section.myself a:nth-child(1)::before, section.myself a:nth-child(1)::after {
+    background-color: #8663c3;
+}
+
+section.myself a:nth-child(2)::before, section.myself a:nth-child(2)::after {
+    background-color: #3885ec;
+}
+
+section.myself a:nth-child(3)::before, section.myself a:nth-child(3)::after {
+    background-color: #0098c1;
+}
+
+section.myself a:nth-child(4)::before, section.myself a:nth-child(4)::after {
+    background-color: #b81718;
+}
+
+section.myself a::before {
+    top: 0;
+    -webkit-transform-origin: right center;
+    transform-origin: right center;
+}
+
+section.myself a::after {
+    bottom: 0;
+    -webkit-transform-origin: left center;
+    transform-origin: left center;
+}
+
+section.myself a:hover::before, section.myself a:hover::after {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+section.myself a:hover {
+    color: #666;
+    font-weight: bold;
+}
+
+section.myself a:nth-child(1) {
+    animation-duration: 1.2s;
+}
+
+section.myself a:nth-child(2) {
+    animation-duration: 1.2s;
+    animation-delay: .6s;
+}
+
+section.myself a:nth-child(3) {
+    animation-duration: 1.2s;
+    animation-delay: 1.2s;
+}
+
+section.myself a:nth-child(4) {
+    animation-duration: 1.2s;
+    animation-delay: 1.8s;
+}
+
+.myselfWrap {
+    display: flex;
+    flex-direction: column;
+    min-height: 500px;
+    justify-content: space-around;
+    flex: 1;
+}
+
+
+/*基本资料*/
+
+.jibenziliao img {
+    width: 55%;
+    float: left;
+}
+
+.jibenziliao {
+    flex: 1.5;
+    box-shadow: 0px 0px 10px 6px #4c4572;
+    padding: 5px;
+}
+
+.jibenziliao p {
+    margin: 40px 0;
+}
+
+.jibenziliao .text {
+    width: 42%;
+    float: right;
+    text-align: center;
+}
+
+
+/*原因*/
+
+.why {
+    box-shadow: 0px 0px 10px 6px #3885ec;
+    text-align: center;
+    padding: 5px;
+    flex: 1.5;
+}
+
+.why img {
+    border-radius: 60px;
+    width: 90%;
+}
+
+.myreson {
+    text-align: center;
+}
+
+.myreson h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+.myreson p {
+    font-size: 17px;
+    margin: 10px 0;
+}
+
+
+/*兴趣爱好*/
+
+.aboutMe.hobby {
+    box-shadow: 0px 0px 10px 6px #0098c1;
+    flex: 1.5;
+    text-align: center;
+}
+
+.aboutMe.hobby img {
+    margin-top: 5px;
+    border-radius: 50%;
+    width: 70%;
+}
+
+.aboutMe.hobby p {
+    font-size: 18px;
+    margin: 2px;
+}
+
+.aboutMe.hobby p span {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+}
+
+
+/*优缺点*/
+
+.aboutMe.youque {
+    box-shadow: 0px 0px 10px 6px #b81718;
+    text-align: center;
+    flex: 1.5;
+}
+
+.aboutMe.youque img {
+    border-radius: 50%;
+    width: 55%;
+    margin-top: 5px;
+}
+
+
+/*技能*/
+
+.skill ul {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.skill ul li {
+    cursor: default;
+    display: none;
+    border-radius: 10px;
+    position: relative;
+}
+
+.skill img {
+    animation-duration: 1.2s;
+    width: 200px;
+    height: 300px;
+}
+
+.skill ul.firstLine li:nth-child(1) {
+    box-shadow: 0px 0px 10px 6px #d81e06;
+}
+
+.skill .firstLine li:nth-child(2) {
+    animation-delay: .5s;
+    box-shadow: 0px 0px 10px 6px #049aa9;
+}
+
+.skill .firstLine li:nth-child(3) {
+    animation-delay: 1s;
+    padding: 6px;
+    box-shadow: 0px 0px 10px 6px #fac552;
+}
+
+.skill .secondLine li:nth-child(1) {
+    animation-delay: 1.5s;
+    box-shadow: 0px 0px 10px 6px #1296db;
+}
+
+.skill .secondLine li:nth-child(2) {
+    animation-delay: 2s;
+    box-shadow: 0px 0px 10px 6px #559b8b;
+}
+
+.skill .secondLine li:nth-child(3) {
+    animation-delay: 2.5s;
+    box-shadow: 0px 0px 10px 6px #707070;
+}
+
+.skill>ul>li>div {
+    display: none;
+    width: 100%;
+    padding: 70px 5px;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .4);
+    text-align: center;
+    color: rgba(255, 255, 255, .8);
+    font-size: 16px;
+    font-weight: bold;
+    left: 0;
+    border-radius: 10px;
+}
+
+
+/*作品*/
+
+.productWrap {
+    position: relative;
+    width: 85%;
+    height: 540px;
+    margin: 20px auto;
+}
+
+.productWrap>.photo {
+    animation-duration: 2s;
+    border-radius: 3px;
+    width: 100%;
+    display: none;
+    position: absolute;
+    text-align: center;
+    box-shadow: 0 0 10px 12px rgba(0, 0, 0, .5);
+}
+
+.productWrap a {
+    width: 100%;
+    display: inline-block;
+}
+
+.productWrap>div.photo1 {
+    display: block;
+}
+
+.productWrap p {
+    margin: 0;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.photo1 img.img1 {
+    height: 500px;
+    width: 75%;
+}
+
+.photo1 img.img2 {
+    height: 500px;
+    width: 24%;
+}
+
+.photo2 img.todo, .photo3 img.xuanchuan, .photo4 img.licai, .photo5 img.taobao {
+    width: 100%;
+    height: 500px;
+}
+
+.photo1 p {
+    color: #643525;
+}
+
+.photo2 p {
+    color: #00334b;
+}
+
+.photo3 p {
+    color: #2f4b65;
+}
+
+.photo4 p {
+    color: #555;
+}
+
+.photo5 p {
+    color: #ff4400;
+}
+
+.dots {
+    position: absolute;
+    z-index: 1;
+    bottom: -40px;
+    left: 50%;
+    margin-left: -58px;
+    padding: 4px 8px;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.dots span {
+    cursor: pointer;
+    background-color: #fff;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    float: left;
+    margin: 0 4px;
+}
+
+
+/*联系我*/
+
+.contact {
+    margin: 30px auto;
+    width: 80%;
+    box-shadow: 0 0 10px 10px rgba(107, 170, 79, 0.44);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.contact img {
+    border-radius: 50%;
+    float: left;
+    width: 50%;
+}
+
+.lianxifangshi {
+    float: right;
+    font-size: 20px;
+}
+
+.lianxifangshi h1 {
+    font-family: cursive;
+    color: rgba(51, 51, 51, 0.69);
+    margin: 55px 0;
+}
+
+.lianxifangshi p {
+    color: rgba(51, 51, 51, 0.88);
+}
