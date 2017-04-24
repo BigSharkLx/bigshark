@@ -6,7 +6,7 @@
 		width : 1200,
 		line : 5,
 		column : 12,
-		img : '../img/2.jpg',
+		img : 'http://bigshark.nos-eastchina1.126.net/2.jpg',
 		animeTime : 3000
 	};
 
