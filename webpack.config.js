@@ -1,4 +1,4 @@
-var debug = process.env.NODE_ENV !== "production"
+var debug = process.env.NODE_ENV !== "production";
 
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -54,7 +54,7 @@ module.exports={
     ]:[
       new HtmlWebpackPlugin({
         filename:'index.html',
-        template:'./src/index.html'
+        template:'./index.html'
       }),
       new webpack.optimize.UglifyJsPlugin({
         compress: {
@@ -65,7 +65,7 @@ module.exports={
         comments: false,
       }),
     ],
-  }
+  };
 
 
 

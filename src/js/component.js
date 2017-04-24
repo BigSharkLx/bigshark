@@ -46,6 +46,47 @@ function animateSection2(){
     $('.firstLine').find('li').addClass('animated bounceInDown');
     $('.secondLine').find('li').addClass('animated bounceInUp');
 }
+// 作品展示轮播图
+var idx=0, timer=null,showDiv=$('.photo'),len=showDiv.length,dots=$('#dots').find('span');
+function runphoto(){
+  clearInterval(timer);
+  timer=setInterval(function(){
+    idx++;
+    if(idx==len){
+      idx=0;
+    }
+    changePhoto(idx);
+  }, 5000);
+  showDiv.on('mouseover',function(){
+    clearInterval(timer);
+  });
+  dots.on('mouseover',function(){
+    clearInterval(timer);
+    idx=$(this).data('index');
+    showDiv.removeClass('fadeInRight');
+    showDiv.addClass('fadeOutLeft');
+    changePhoto(idx);
+  });
+  }
+
+showDiv.on('mouseleave',function(){
+  runphoto();
+});
+dots.on('mouseout',function(){
+  runphoto();
+});
+function changePhoto(idx){
+  dots.css('background-color','#fff');
+showDiv.eq(idx-1).removeClass('animated fadeInRight');
+    showDiv.eq(idx-1).addClass('animated fadeOutLeft');
+  showDiv.eq(idx).show();
+  showDiv.eq(idx).removeClass('animated fadeOutLeft');
+    showDiv.eq(idx).addClass('animated fadeInRight');
+    dots.eq(idx).css('background-color','red');
+}
+function animateSection3(){
+runphoto();
+}
 // 联系我的动画
 function animateSection4(){
   $('.call').addClass('animated rotateIn');
@@ -67,6 +108,7 @@ var index=$(this).data("index");
 showSection(index);
 if(index==1){animateSection1();}
 if(index==2){animateSection2();}
+if(index==3){animateSection3();}
 if(index==4){animateSection4();}
 });
 // 第二页个人资料导航
@@ -107,54 +149,6 @@ $('.skill').find('li').on('mouseout',function(){
   $(this).find('img').css('opacity','1');
   $(this).find('div').addClass('animated zoomOut');
 });
-// 作品展示轮播图
-var idx=0, timer=null,showDiv=$('.photo'),len=showDiv.length,dots=$('#dots').find('span');
-function runphoto(){
-  timer=setInterval(function(){
-    idx++;
-    if(idx==len){
-      idx=0;
-    }
-    changePhoto(idx);
-  }, 5000);
-  showDiv.on('mouseover',function(){
-    clearInterval(timer);
-  });
-  dots.on('mouseover',function(){
-    clearInterval(timer);
-    idx=$(this).data('index');
-    showDiv.removeClass('fadeInRight');
-    showDiv.addClass('fadeOutLeft');
-    changePhoto(idx);
-  });
-  }
-runphoto();
-showDiv.on('mouseleave',function(){
-  runphoto();
-});
-dots.on('mouseout',function(){
-  runphoto();
-});
-function changePhoto(idx){
-  dots.css('background-color','#fff');
-showDiv.eq(idx-1).removeClass('animated fadeInRight');
-    showDiv.eq(idx-1).addClass('animated fadeOutLeft');
-  showDiv.eq(idx).show();
-  showDiv.eq(idx).removeClass('animated fadeOutLeft');
-    showDiv.eq(idx).addClass('animated fadeInRight');
-    dots.eq(idx).css('background-color','red');
-}
-
-
-
-
-
-
-
-
-
-
-
 
 
 });

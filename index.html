@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>webpack Demo</title>
+    <link rel="stylesheet" href="./src/css/animate.min.css">
+    <link rel="stylesheet" href="./src/css/main.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="clearfix">
+            <nav>
+                <div class="logo clearfix">
+                    <img src="./src/img/bigshark.jpg" alt="logo">
+                    <span>BigShark<br/>个人简历</span>
+                </div>
+                <ul class="nav clearfix">
+
+                    <li><a data-index="0" href="javascript:void(0);">
+      个人首页
+    </a></li>
+                    <li><a data-index="1" href="javascript:void(0);">
+      我的简介
+    </a></li>
+                    <li><a data-index="2" href="javascript:void(0);">
+      专业技能
+    </a></li>
+                    <li><a data-index="3" href="javascript:void(0);">
+      我的作品
+    </a></li>
+                    <li><a data-index="4" href="javascript:void(0);">
+      联系我
+    </a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="shouye">
+            <div class="popup-container">
+                <div class="img-flex"></div>
+            </div>
+            <div class="famouse">
+                <p class="p1 animated bounceInLeft">生活其实很简单,过了今天就是明天。</p>
+                <p class="p2 animated bounceInRight">你唯一应该超越的人，是昨天的自己。</p>
+            </div>
+        </section>
+
+        <section class="myself">
+
+            <div class="myselfWrap">
+                <a href="javascript:void(0);" data-index="0">
+                    <i class="iconfont">&#xe638;</i>
+                    <span>基本资料</span>
+                </a>
+
+                <a href="javascript:void(0);" data-index="1">
+                    <i class="iconfont">&#xe64e;</i>
+                    <span>为什么选择前端</span>
+                </a>
+
+
+                <a href="javascript:void(0);" data-index="2">
+                    <i class="iconfont">&#xe61d;</i>
+                    <span>兴趣爱好</span>
+                </a>
+
+
+                <a href="javascript:void(0);" data-index="3">
+                    <i class="iconfont">&#xe603;</i>
+                    <span>优劣势</span>
+                </a>
+            </div>
+
+            <div class="aboutMe jibenziliao">
+                <img src="./src/img/myphoto.jpg" alt="个人相片">
+                <div class="text">
+                    <p>姓名：李旭</p>
+                    <p>年龄：23</p>
+                    <P>坐标：武汉</P>
+                    <p>毕业学校：华中农业大学</p>
+                    <p>自我描述：积极乐观，善于团队合作，充满正能量,对一切新鲜事物都有着好奇心</p>
+                    <p>座右铭：路选对了，就不怕远！</p>
+                </div>
+            </div>
+            <div class="aboutMe why">
+                <img src="./src/img/qianduan.jpg" alt="web前端">
+                <div class="myreson">
+                    <h1>兴趣与成就感</h1>
+                    <p>还记得刚接触前端时，自己在记事本里面写了一个Hello World显示在页面上时就无比激动，心想自己也能写网页了，之后每当做出一个心满意足的网页的时候内心就无比快乐</p>
+                    <h1>魔术与美容师</h1>
+                    <p>每次修改css的时候都感觉自己是一个美容师，在自己的能力内把最美的页面呈献给大家；而当自己写js时仿佛置身于魔术世界，努力做出最适合的交互效果。</p>
+                    <h1>追求和超越</h1>
+                    <p>马云有一句话说得好：路选对了，就不怕远！我并不怀疑前端这条路，所以我唯一要做的就是坚定的走下去，超越昨天的自己！</p>
+                </div>
+            </div>
+            <div class="aboutMe hobby">
+                <img src="./src/img/hobby.jpg" alt="兴趣爱好">
+                <p>演讲、动漫、羽毛球、唱歌</p>
+                <p>当然最重要的就是<span>Coding</span></p>
+                <p>再忙，每天也会抽时间出来写代码！</p>
+            </div>
+            <div class="aboutMe youque">
+                <img src="./src/img/youque.jpg" alt="优缺点">
+                <p>优势：青春活力好交流，喜欢创新，思考问题有自己的方式，自学能力强</p>
+                <p>劣势：并非计算机专业，工作经验不足，但是会用努力来弥补这些！</p>
+            </div>
+        </section>
+        <section class="skill">
+            <ul class="firstLine">
+                <li>
+                    <img src="./src/img/html.svg" alt="">
+                    <div class="htmlSkill">
+                        <p>精通DIV+CSS布局</p>
+                        <p>熟练使用html标签</p>
+                        <p>了解H5新特性</p>
+                        <p>深刻理解web语义化</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="./src/img/css.svg" alt="">
+                    <div class="css3">
+                        <p>熟练使用css3</p>
+                        <p>注重浏览器兼容</p>
+                        <p>熟悉bootstrap以及antd</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="./src/img/js.svg" alt="">
+                    <div class="js">
+                        <p>掌握面向对象的编程思想</p>
+                        <p>熟悉ES6</p>
+                        <p>注重代码规范和以及性能优化</p>
+                    </div>
+                </li>
+            </ul>
+            <ul class="secondLine">
+                <li>
+                    <img src="./src/img/jquery.svg" alt="">
+                    <div class="jquery">
+
+                        <p>熟练运用jQuery框架</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="./src/img/react.svg" alt="">
+                    <div class="react">
+                        <p>熟悉并运用react框架</p>
+                        <p>了解react基本思想</p>
+                        <P>了解react-router</P>
+                    </div>
+                </li>
+                <li>
+                    <img src="./src/img/xiang.svg" alt="">
+                    <div class="other">
+                        <p>熟练掌握响应式设计理念</p>
+                        <p>熟悉版本控制工具Git</p>
+                        <P>会使用基本的node.js</P>
+                        <P>运用webpack做模块式开发</P>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section class="product">
+            <div class="productWrap">
+                <div class="photo photo1">
+                    <a href="https://github.com/BigSharkLx/react-demo" target="_blank">
+                        <img class="img1" src="./src/img/reactP.jpg">
+                        <img class="img2" src="./src/img/reactM.jpg">
+                        <p>使用react+ES6+webpack+antd制作的pc端和移动端适配新闻页面</p>
+                    </a>
+                </div>
+
+                <div class="photo photo2">
+                    <a href="https://github.com/BigSharkLx/todo" target="_blank">
+                        <img class=" todo " src="./src/img/todo.png " alt=" ">
+                        <p>使用jquery+store.js实现带闹铃提醒的todo小应用</p>
+                    </a>
+                </div>
+                <div class="photo photo3 ">
+                    <a href="https://github.com/BigSharkLx/display-css3" target="_blank">
+                        <img class="xuanchuan" src="./src/img/xuanchuan.png" alt="">
+                        <p>使用原生js+css3动画做成的宣传页</p>
+                    </a>
+                </div>
+                <div class="photo photo4">
+                    <a href="https://github.com/BigSharkLx/response" target="_blank">
+                        <img class=" licai " src="./src/img/licai.png " alt=" ">
+                        <p>采用响应式设计理念完成的一个理财产品首页</p>
+                    </a>
+                </div>
+                <div class="photo photo5 ">
+                    <a href="https://github.com/BigSharkLx/taobao" target="_blank">
+                        <img class="taobao" src="./src/img/taobao.png" alt="">
+                        <p>自己仿制的pc端淘宝部分首页</p>
+                    </a>
+                </div>
+                <div class="dots" id="dots">
+                    <span data-index="0"></span>
+                    <span data-index="1"></span>
+                    <span data-index="2"></span>
+                    <span data-index="3"></span>
+                    <span data-index="4"></span>
+                </div>
+            </div>
+        </section>
+        <section class="call">
+            <div class="contact clearfix">
+                <img src="./src/img/contact.jpg" alt="联系我">
+                <div class="lianxifangshi">
+                    <h1>成功源自于我的努力和您的赏识！</h1>
+                    <p>电话：18202756325</p>
+                    <p>QQ：908130255</p>
+                    <P>邮箱：908130255@qq.com</P>
+                    <h1>路漫漫其修远兮，吾将上下而求索！</h1>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <script src="./src/vender/jquery-2.1.1.min.js"></script>
+    <script src="./src/js/animatephoto.js">
+    </script>
+    <script src="./src/js/jquery.gradientify.min.js"></script>
+    <script src="./dist/bundle.min.js"></script>
+</body>
+
+</html>
