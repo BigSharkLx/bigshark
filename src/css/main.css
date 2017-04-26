@@ -119,7 +119,12 @@ header ul li {
 
 /*首页大图片*/
 
+section {
+    display: none;
+}
+
 section.shouye {
+    display: block;
     width: 100%;
     min-height: 500px;
 }
