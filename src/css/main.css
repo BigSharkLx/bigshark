@@ -68,7 +68,7 @@ ul li {
 /*header*/
 
 header.clearfix {
-    height: 90px;
+    height: 20vh;
     color: #fff;
     font-weight: bold;
     margin: -8px -8px 8px -8px;
@@ -126,7 +126,7 @@ section {
 section.shouye {
     display: block;
     width: 100%;
-    min-height: 500px;
+    height: 80vh;
 }
 
 .popup-container {
