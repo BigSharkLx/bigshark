@@ -271,7 +271,7 @@ dl.our-culture{
   float: left;
   padding: 10px;
   margin: 0 1.5%;
-  height: 230px;
+  height: 260px;
   text-align: center;
   box-shadow: 0px 0px 5px 0px #9E9E9E;
   border-radius: 5px;
@@ -306,3 +306,7 @@ span.main-companttext {
 }
 .iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
 .iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
+p.big-text {
+    font-weight: bold;
+    font-size: 20px;
+}
