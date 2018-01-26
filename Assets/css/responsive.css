@@ -18,8 +18,13 @@
 }
 .i_mbr dl dd{ width:285px; overflow:hidden;}
 .f_nav dl dd{ width:265px;}
-.scd .scd_r{ width:710px;padding-right: 10px;}
-.contact dt, .contact dt img,.contact dd{ width:100%;}
+.scd .scd_r{ float: left;
+    width: 710px;
+    padding-right: 10px;
+    margin-left: 20px;}
+.contact dt, .contact dt img,.contact dd{
+  width: 100%;
+    float: left;}
 .team dl{ width:350px; margin-right:10px;}
 .team dl dd{ width:175px;}
 .scd .scd_ra{ width:100%;}
@@ -34,7 +39,9 @@
 .i_service li{ width:236px; margin-bottom:10px;}
 .i_service{ margin-bottom:5px;}
 .i_ma .i_mal,.i_ma .i_mar,.i_mb .i_mbl,.i_mb .i_mbr,.f_nav ul,.f_nav dl{ width:100%;}
-.i_mal dl dd{ width:520px;}
+.i_mal dl dd{ float: left;
+    margin-left: 20px;
+    width: 500px;}
 .i_mbr dl dd{ width:540px;}
 .f_nav ul{ margin-bottom:15px;}
 .scd .scd_r{ width:500px;}
@@ -180,5 +187,18 @@ dl.our-culture {
 }
 .i_mbr dl dt img{
   margin-left: 60px;
+}
+p.head-companyname{
+  font-size: 20px;
+      width: 350px;
+}
+p.head-englishname{
+  font-size: 14px;
+      width: 350px;
+}
+span.main-companttext{
+  bottom: 60px;
+    left: 50%;
+    margin-left: -175px;
 }
 }
