@@ -63,7 +63,7 @@ a{ color:#333;}
     float: left;
     vertical-align: top;}
 .i_mal dl dd{
-  text-indent: 1em;
+  text-indent: 2em;
   margin-top: 10px;
   width: 420px;
   float: right;
@@ -262,7 +262,7 @@ transition: all .5s;
   padding: 10px;
 }
 .active-text p{
-      text-indent: 1em;
+      text-indent: 2em;
   font-size: 16px;
     margin-left: 10px;
 }
