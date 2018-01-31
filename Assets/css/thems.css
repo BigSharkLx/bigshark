@@ -156,12 +156,11 @@ a{ color:#333;}
 .news li em{ display:block; text-align:right; position:absolute; right:0; top:0;}
 
 .logo img{
-  max-width:100%;
+  margin-top: -10px;
+  max-width: 100%;
   width: 100px;
-  height: 100px;
   float: left;
   vertical-align: middle;
-  background: #2196f3;
   margin-right: 2%;
 }
 p.head-companyname {
